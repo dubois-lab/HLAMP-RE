@@ -1,0 +1,11 @@
+input: './samplesheet_nfCore_HiC_blank.csv'
+outdir: './results'
+genome: 'CHM13'
+digestion: 'arima'
+bin_size: '500000,10000,5000'
+ligation_site: 'GATCGATC,GANTGATC,GANTANTC,GATCANTC'
+min_restriction_fragment_size: 10
+max_restriction_fragment_size: 100000
+min_insert_size: 100
+max_insert_size: 1000
+save_raw_maps: TRUE
