@@ -39,7 +39,8 @@ Scripts named `*job-script*` or `*sbatch*` run on a SLURM cluster with Apptainer
 Set the paths at the top of each one, create a `logs/` folder, and submit it from
 its own folder. They need a container with R and the packages the R script loads.
 
-Patient-level and third-party input data are not part of this repository.
+Patient-level and third-party input data are not part of this repository, apart
+from the per-sample tables for Fig. 1B and 1C, which contain no identifiable data.
 
 ## Figures
 
@@ -101,8 +102,8 @@ Patient-level and third-party input data are not part of this repository.
 | 8 | [`08_HiC`](common/workflows/08_HiC) | nf-core/hic, HiCDCPlus |
 
 Tool citations are in the `NOTES.md` file in each folder. Sample sheets are
-provided as blank templates (`samplesheet_*_blank.csv`). Patient-level input
-data are not part of this repository.
+provided as blank templates (`samplesheet_*_blank.csv`). Patient-level inputs
+to these workflows are not part of this repository.
 
 ## License
 
