@@ -23,7 +23,7 @@ g2 <- IDs$sid[IDs$tissue=="BRCA"]
 dmlTest.sm = DMLtest(BSobj, group1=g1, group2=g2, smoothing=TRUE, ncores = 72) # adjust number of cores to fit machine
 
 # dmls (diff. meth. sites)
-dmls2 = callDML(dmlTest.sm, p.threshold=0.005, delta=0.2)
+dmls2 = callDML(dmlTest.sm, p.threshold=0.005, delta=0.4)
 
 # dmrs (diff. meth. regions)
 dmrs_d = callDMR(dmlTest.sm, p.threshold=0.01, minlen = 50, dis.merge = 500, pct.sig = 0.6, delta=0.4)
