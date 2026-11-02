@@ -39,8 +39,7 @@ Scripts named `*job-script*` or `*sbatch*` run on a SLURM cluster with Apptainer
 Set the paths at the top of each one, create a `logs/` folder, and submit it from
 its own folder. They need a container with R and the packages the R script loads.
 
-Patient-level and third-party input data are not part of this repository, apart
-from the per-sample tables for Fig. 1B and 1C, which contain no identifiable data.
+Patient-level and third-party input data are not part of this repository.
 
 ## Figures
 
