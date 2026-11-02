@@ -151,7 +151,7 @@ print(paste(sum(good_tile), 'of', n_tiles, 'tiles pass QC (median HiC coverage',
     paste(paste(chrs, tabulate(pair_dt$q, length(chrs))), collapse = ', '), '),', round(100 * mean(pair_dt$counts == 0), 1), '% with count 0;',
     pair_dt[, sum(in_TAD)], xG, 'lung TAD tile pairs, log10(CN_i*CN_j)', round(TAD_lx[1], 2), '-', round(TAD_lx[2], 2)))
 
-# cells: 100 log-spaced bins of CN_i*CN_j x 50 log-spaced distance bins
+# cells: 200 log-spaced bins of CN_i*CN_j x 200 log-spaced distance bins
 x_breaks <- seq(min(pair_dt$lx), max(pair_dt$lx), length.out = n_xbins + 1)
 d_breaks <- seq(log10(binsize), log10(Dmax), length.out = n_dbins + 1)
 x_mid <- (x_breaks[-1] + x_breaks[-length(x_breaks)]) / 2
