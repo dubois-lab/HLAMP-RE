@@ -1,3 +1,6 @@
+# Input folder: set IN_DIR in the environment or edit the default here
+IN_DIR <- Sys.getenv('IN_DIR', unset = 'input')
+
 library(gGnome)
 library(gTrack)
 library(plyranges)
@@ -6,8 +9,8 @@ gt.ge  <- readRDS('../../../common/data/refGenome/T2T_gencode_gt_UCSC.rds')
 CGC_gr <- readRDS('../../../common/data/refGenome/cgc_T2T_gr_UCSC.rds')
 
 sid <- "C169"
-jabba <- gG(jabba = paste0('source_data/',sid,'_jabba.gg.rds'))
-circ_walk <- readRDS(paste0('source_data/',sid,''))
+jabba <- gG(jabba = paste0(IN_DIR,'/',sid,'_jabba.gg.rds'))
+circ_walk <- readRDS(paste0(IN_DIR,'/',sid,''))
 
 window <- GRanges(seqnames="11",ranges=IRanges(start=c(68990317,77759934),end=c(71152739,78874195)))
 

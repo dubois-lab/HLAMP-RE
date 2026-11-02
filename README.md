@@ -49,8 +49,8 @@ Patient-level and third-party input data are not part of this repository.
 |---|---|---|---|
 | Fig. 1 | `Figures/Figure_1/Fig1B` | [`Fig1B.R`](Figures/Figure_1/Fig1B/Fig1B.R) | yes |
 | Fig. 1 | `Figures/Figure_1/Fig1C` | [`Fig1C_01_run_DeepSomatic.sh`](Figures/Figure_1/Fig1C/Fig1C_01_run_DeepSomatic.sh)<br>[`Fig1C_02_vep_annotation.sh`](Figures/Figure_1/Fig1C/Fig1C_02_vep_annotation.sh)<br>[`Fig1C_03_make_cbioportal_files.py`](Figures/Figure_1/Fig1C/Fig1C_03_make_cbioportal_files.py)<br>[`Fig1C_jabba_cbio.R`](Figures/Figure_1/Fig1C/Fig1C_jabba_cbio.R) | yes |
-| Fig. 2 | `Figures/Figure_2/Fig2A` | [`Fig2A.R`](Figures/Figure_2/Fig2A/Fig2A.R) | yes |
-| Fig. 2 | `Figures/Figure_2/Fig2B` | [`Fig2B.R`](Figures/Figure_2/Fig2B/Fig2B.R) | yes |
+| Fig. 2 | `Figures/Figure_2/Fig2A` | [`Fig2A.R`](Figures/Figure_2/Fig2A/Fig2A.R) | no |
+| Fig. 2 | `Figures/Figure_2/Fig2B` | [`Fig2B.R`](Figures/Figure_2/Fig2B/Fig2B.R) | no |
 | Fig. 2 | `Figures/Figure_2/Fig2C_D` | [`Fig2C_D_NSD3_EGFR_genomeWide.R`](Figures/Figure_2/Fig2C_D/Fig2C_D_NSD3_EGFR_genomeWide.R) | no |
 | Fig. 2 | `Figures/Figure_2/Fig2E` | [`Fig2E_BRCA_NSCLC_CCND1_LeftVsRight_FisherStats_cons80.R`](Figures/Figure_2/Fig2E/Fig2E_BRCA_NSCLC_CCND1_LeftVsRight_FisherStats_cons80.R) | no |
 | Fig. 3 | `Figures/Figure_3/Fig3A` | [`Fig3A_diffmethyl_CCND1_T2T_vis.R`](Figures/Figure_3/Fig3A/Fig3A_diffmethyl_CCND1_T2T_vis.R) | no |

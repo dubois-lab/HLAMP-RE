@@ -1,3 +1,6 @@
+# Input folder: set IN_DIR in the environment or edit the default here
+IN_DIR <- Sys.getenv('IN_DIR', unset = 'input')
+
 library(gGnome)
 library(gTrack)
 library(plyranges)
@@ -6,10 +9,10 @@ gt.ge  <- readRDS('../../../common/data/refGenome/T2T_gencode_gt_UCSC.rds')
 CGC_gr <- readRDS('../../../common/data/refGenome/cgc_T2T_gr_UCSC.rds')
 
 sid <- "C96"
-jabba <- gG(jabba = paste0('source_data/',sid,'_jabba.gg.rds'))
+jabba <- gG(jabba = paste0(IN_DIR,'/',sid,'_jabba.gg.rds'))
 
-SVs <- jJ(paste0('source_data/',sid,'_sniffles_PoNfiltered.bedpe'))
-cov <- dt2gr(fread(paste0('source_data/',sid,'_tumor_5kbBin_USCS_cov.csv')))
+SVs <- jJ(paste0(IN_DIR,'/',sid,'_sniffles_PoNfiltered.bedpe'))
+cov <- dt2gr(fread(paste0(IN_DIR,'/',sid,'_tumor_5kbBin_USCS_cov.csv')))
 cov300_gt <- gTrack(data = cov, y.field = 'ratio', name = 'coverage', y0=0, y1 = 300)
 
 CNxt <- 8
