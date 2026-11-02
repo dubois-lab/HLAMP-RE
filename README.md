@@ -31,15 +31,6 @@ If these are not set, the scripts use `input/` and `output/` in the current
 folder. Each script names the files it needs. Most sit directly in `IN_DIR`; these
 are kept in subfolders:
 
-| Subfolder of `IN_DIR` | Contents |
-|---|---|
-| `hic/nfcore_results`, `hic/H3D44S_results`, `hic/arima_results` | nf-core/hic results |
-| `hic/linkprep` | `.hic` files |
-| `jabba` | JaBbA results |
-| `bedmeth`, `bedmethylRDS` | methylation calls |
-| `CNmodels`, `CNmodels_binfix` | copy number models, per gene |
-| `TADratio`, `TADratio_binfix` | per-tumor TAD ratio tables, per gene |
-
 Some inputs are outputs of earlier steps, so copy them to `IN_DIR` before running
 the next step. For example, the Fig. S4 job writes the models in `CNmodels`, and
 the Fig. S5B job writes the tables in `TADratio`.
