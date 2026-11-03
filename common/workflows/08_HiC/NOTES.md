@@ -19,7 +19,7 @@ Run the first two scripts for each sample, and the third for each gene and group
 - `normalized_abs.bed`: the 5 kb bins of the contact matrix in hs1, with chromosome, start (0-based) and end in the first three columns
 - `<gene>_TSSgr_T2T.rds`: a GRanges with the TSS of the gene in hs1
 
-The figure scripts read the per-sample tracks from `individuals/` under `IN_DIR`, and the combined tracks with a date in the name: `20260702_comb_Pvals_v4C_<gene>_<group>_gr.rds`.
+The figure scripts read the per-sample tracks from `individuals/` under `IN_DIR`.
 
 # gGnome (https://github.com/mskilab-org/gGnome)
 
