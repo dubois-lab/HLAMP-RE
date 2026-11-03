@@ -3,6 +3,7 @@ library(dplyr)
 library(ggplot2)
 
 clinical <- fread('source_data/lpWGS_clinical.tsv')
+# lpWGS_genomic.tsv is not public. common/workflows/00_lpWGS/05_ichorCNA_gene_alterations.R writes it from the ichorCNA results
 genomic <- fread('source_data/lpWGS_genomic.tsv')
 colnames(genomic) <- c("sid","gene","amp","X")
 

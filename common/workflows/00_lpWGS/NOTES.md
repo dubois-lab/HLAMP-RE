@@ -6,7 +6,7 @@
 | `02_sarek_controlfreec.sh` | copy number with Control-FREEC, from aligned BAM files |
 | `03_ichorCNA_amplified_oncogenes.R` | amplified oncogenes in the ichorCNA segments, with IGV segment files per gene |
 | `04_circDNA_ampliconarchitect.sh` | amplicon reconstruction with AmpliconArchitect, from aligned BAM files |
-| `05_ichorCNA_gene_alterations.R` | copy number alteration calls per sample and gene, written as `lpWGS_genomic.tsv` for Fig. 1B and Fig. S1A |
+| `05_ichorCNA_gene_alterations.R` | copy number alteration calls per sample and gene, written as `lpWGS_genomic.tsv` for Fig. 1B and Fig. S1A; this table is not public |
 
 `03_ichorCNA_amplified_oncogenes.R` reads these files from `IN_DIR`:
 
