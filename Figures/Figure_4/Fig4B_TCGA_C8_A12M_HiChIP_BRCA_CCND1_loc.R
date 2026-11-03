@@ -95,7 +95,7 @@ GERCARres_gr_sig <- dt2gr(GERCARres[FDR_prolif_21 < 0.1 & chromosome == as.chara
 GERCARres_prolifd21_q0.1_gt <- gTrack(gr.nochr(GERCARres_gr_sig))
 
 # significant lineage-differential H3K27ac & ATAC peaks (BRCA_HR+)
-ATACfisher <- fread(file.path(IN_DIR, '20250614_CCND1_H3K27ac&ATAC_linDiffs_stats.csv'))
+ATACfisher <- fread(file.path(IN_DIR, '20260614_CCND1_H3K27ac&ATAC_linDiffs_stats.csv'))
 ATACfisher[, chr := unlist(strsplit(x = peakID, split = "[:]"))[1]]
 ATACfisher[, start := as.numeric(unlist(strsplit(x = peakID, split = "[:]"))[2]), by = peakID]
 ATACfisher[, end := as.numeric(unlist(strsplit(x = peakID, split = "[:]"))[3]), by = peakID]

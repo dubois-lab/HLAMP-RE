@@ -211,7 +211,7 @@ GERCARres_gr_sig <- dt2gr(GERCARres[FDR_prolif_21 < 0.1])
 GERCARres_prolifd21_q0.1_gt <- fmt_gt(gTrack(GERCARres_gr_sig))
 
 # sigdiff ####
-ATACfisher <- fread(file.path(IN_DIR, "20250614_CCND1_H3K27ac&ATAC_linDiffs_stats.csv"))
+ATACfisher <- fread(file.path(IN_DIR, "20260614_CCND1_H3K27ac&ATAC_linDiffs_stats.csv"))
 ATACfisher[, chr := unlist(strsplit(x = peakID, split = "[:]"))[1]]
 ATACfisher[, start := as.numeric(unlist(strsplit(x = peakID, split = "[:]"))[2]), by = peakID]
 ATACfisher[, end := as.numeric(unlist(strsplit(x = peakID, split = "[:]"))[3]), by = peakID]
