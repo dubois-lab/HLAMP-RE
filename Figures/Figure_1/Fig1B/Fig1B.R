@@ -33,7 +33,7 @@ ggplot(df, aes(x = value, y = sample, fill = type)) +
   geom_bar(stat = "identity", position = position_dodge()) +
   scale_fill_manual(values = c("NSCLC" = "royalblue3","BRCA" = "brown3"),
                     breaks=c("NSCLC", "BRCA"),
-                    labels = c("NSCLC" = "NSCLC (n = 239)", "BRCA" = "BRCA (n = 166)")) +
+                    labels = c("NSCLC" = "NSCLC (n = 293)", "BRCA" = "BRCA (n = 166)")) +
   scale_x_continuous(expand=c(0,0)) +
   labs(x = "Samples [%]", y = "Amplified genes (cytoband)") +
   theme_minimal() + 
