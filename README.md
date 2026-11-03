@@ -91,6 +91,7 @@ Patient-level and third-party input data are not part of this repository.
 
 | Step | Folder | Tools |
 |---|---|---|
+| 0 | [`00_lpWGS`](common/workflows/00_lpWGS) | ichorCNA, nf-core/sarek with Control-FREEC, nf-core/circdna with AmpliconArchitect |
 | 1 | [`01_alignment_and_modkit`](common/workflows/01_alignment_and_modkit) | epi2me wf-somatic-variation |
 | 2 | [`02_SNV_SV_calling`](common/workflows/02_SNV_SV_calling) | epi2me wf-human-variation, panel-of-normals filtering |
 | 3 | [`03_CNV_calling`](common/workflows/03_CNV_calling) | CNVkit |
@@ -99,6 +100,7 @@ Patient-level and third-party input data are not part of this repository.
 | 6 | [`06_consensus_amplicon`](common/workflows/06_consensus_amplicon/HLAMP_walks_combined_hs1) | consensus amplicons and Fisher tests ([method notes](common/workflows/06_consensus_amplicon/HLAMP_walks_combined_hs1/NOTES.md)) |
 | 7 | [`07_differential_methylation`](common/workflows/07_differential_methylation) | DSS |
 | 8 | [`08_HiC`](common/workflows/08_HiC) | nf-core/hic, HiCDCPlus |
+| 9 | [`09_RNAseq`](common/workflows/09_RNAseq) | nf-core/rnaseq, DESeq2 |
 
 Tool citations are in the `NOTES.md` file in each folder. Sample sheets are
 provided as blank templates (`samplesheet_*_blank.csv`). Patient-level inputs
