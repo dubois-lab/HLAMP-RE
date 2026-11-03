@@ -9,12 +9,14 @@
 # Set these for your system, then submit from this folder after creating logs/
 # Needs Snakemake with the SLURM executor plugin, and Singularity
 WORK_DIR=/path/to/lpWGS
-SNAKEFILE=/path/to/Snakefile
-WORKFLOW_PROFILE=/path/to/workflow_profile
+CONFIG=/path/to/config.yaml # see config_blank.yaml
+WORKFLOW_PROFILE=/path/to/workflow_profile # SLURM settings for your cluster
 SINGULARITY_DIR=/path/to/singularity_images
 
+SCRIPT_DIR="$PWD"
+mkdir -p "$WORK_DIR/results"
+cp 01_ichorCNA_runscript.R "$WORK_DIR/"
 cd "$WORK_DIR"
-mkdir -p results
 
 snakemake --executor slurm -j unlimited --workflow-profile "$WORKFLOW_PROFILE" --rerun-incomplete \
-    -s "$SNAKEFILE" --use-singularity --singularity-prefix "$SINGULARITY_DIR" --latency-wait 3
+    -s "$SCRIPT_DIR/Snakefile" --configfile "$CONFIG" --use-singularity --singularity-prefix "$SINGULARITY_DIR" --latency-wait 3

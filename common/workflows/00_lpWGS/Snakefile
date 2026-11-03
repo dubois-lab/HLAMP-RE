@@ -1,0 +1,47 @@
+rule all:
+	input: 
+		expand("results/ichorCNA/{tumor}/{tumor}.cna.seg", tumor=config["samples"]),
+		expand("results/readDepth/{samples}.bin{binSize}.wig", samples=config["samples"], binSize=str(config["binSize"]))
+
+rule read_counter:
+	input:
+		lambda wildcards: config["samples"][wildcards.samples]
+	output:
+		"results/readDepth/{samples}.bin{binSize}.wig"		
+	params:
+		binSize=config["binSize"],
+		qual="20",
+		chrs=config["chrs"]
+	resources:
+		mem=4
+	log:
+		"results/logs/readDepth/{samples}.bin{binSize}.log"
+	singularity:
+		"docker://fredhutch/ichorcna:v0.5.0"
+	shell:
+		"readCounter {input} -c {params.chrs} -w {params.binSize} -q {params.qual} > {output} 2> {log}"
+
+# ichorCNA settings are in 01_ichorCNA_runscript.R
+rule ichorCNA:
+	input:
+		tum=lambda wildcards: f"results/readDepth/{wildcards.tumor}.bin{config['binSize']}.wig",
+	output:
+		corrDepth="results/ichorCNA/{tumor}/{tumor}.correctedDepth.txt",
+		param="results/ichorCNA/{tumor}/{tumor}.params.txt",
+		cna="results/ichorCNA/{tumor}/{tumor}.cna.seg",
+		segTxt="results/ichorCNA/{tumor}/{tumor}.seg.txt",
+		seg="results/ichorCNA/{tumor}/{tumor}.seg",
+		rdata="results/ichorCNA/{tumor}/{tumor}.RData"
+	singularity:
+		# Derivative of the fredhutch/ichorcna image
+		"docker://frankdubois/ichorcna_optparse:v1"
+	params:
+		outDir="results/",
+		id="{tumor}"
+	threads: 18
+	resources:
+		mem=4
+	log:
+		"results/logs/ichorCNA/{tumor}.log"	
+	shell:
+		"Rscript 01_ichorCNA_runscript.R --id {params.id} --cores 18 --outDir {params.outDir}"

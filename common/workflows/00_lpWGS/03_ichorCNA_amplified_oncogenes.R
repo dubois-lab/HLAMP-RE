@@ -9,7 +9,7 @@ library(parallel)
 library(gUtils)
 
 # ichorCNA results, one folder per sample (see 01_ichorCNA_snakemake.sh)
-results_dir <- file.path(IN_DIR, 'ichorCNA/results')
+results_dir <- file.path(IN_DIR, 'results/ichorCNA')
 fls <- list.files(results_dir)
 
 IGVseg <- rbindlist(lapply(fls, function (xsid) {
