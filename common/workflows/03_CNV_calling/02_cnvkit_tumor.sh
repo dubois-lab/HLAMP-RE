@@ -27,7 +27,7 @@ cat > jobScripts/job-cnvkit-tumor_${col1}-5kb.sh <<EOF
 cnvkit.py coverage ${col2} ${T2T_ref_dir}/T2T-CHM13v1.1_genomic_UCSC_5kb_bins.bed -o inputs/${col1}_tumor_5kbBin_UCSC.cnn
 
 # normalize and fix
-cnvkit.py fix inputs/${col1}_tumor_5kbBin_UCSC.cnn inputs/${col1}_tumor_5kbBin_UCSC.cnn inputs/CNV_pooled_normal_reference.cnn -o inputs/${col1}_tumor_5kbBin_UCSC.cnr
+cnvkit.py fix inputs/${col1}_tumor_5kbBin_UCSC.cnn inputs/CNV_pooled_normal_reference.cnn -o inputs/${col1}_tumor_5kbBin_UCSC.cnr
 
 # segment and call
 cnvkit.py segment inputs/${col1}_tumor_5kbBin_UCSC.cnr -o outputs/${col1}_tumor_v_hmmT_5kbBin_UCSC.cns -p 24 -m hmm-tumor -v ${col3}/${col1}.wf_snp.vcf.gz
