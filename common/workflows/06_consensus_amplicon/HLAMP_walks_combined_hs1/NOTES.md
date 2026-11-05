@@ -19,11 +19,9 @@ Two samplesheets, one row per walk file (templates:
 | `priority` | tie-break between walk sources, lower wins (optional) |
 
 * **hg19** — HMF and PCAWG samples, whose JaBbA graphs and walks are on hg19.
-  The analysis used 10,103 walk files from 631 samples. Cohort is BRCA for
-  breast and NSCLC for lung primaries. `patient` is the HMF patient ID, so
+  Cohort is BRCA for breast and NSCLC for lung primaries. `patient` is the HMF patient ID, so
   only one biopsy per HMF patient is kept.
-* **hs1** — ONT samples reconstructed on hs1. The analysis used 982 walk files
-  from 56 samples; the same samplesheet serves all three genes.
+* **hs1** — ONT samples reconstructed on hs1. The same samplesheet serves all three genes.
 
 The samplesheets and walks contain patient-level data and are not part of
 this repository.
