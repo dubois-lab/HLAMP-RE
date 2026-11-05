@@ -24,7 +24,7 @@ cat > jobScripts/job-cnvkit-tumor_${col1}-5kb.sh <<EOF
 #SBATCH --error=logs/cnvkit-tumor_${col1}-5kb.err
 
 # compute per bin coverage
-cnvkit.py coverage ${col2} ${T2T_ref_dir}/T2T-CHM13v1.1_genomic_UCSC_5kb_bins.bed -o inputs/ -o inputs/${col1}_tumor_5kbBin_UCSC.cnn
+cnvkit.py coverage ${col2} ${T2T_ref_dir}/T2T-CHM13v1.1_genomic_UCSC_5kb_bins.bed -o inputs/${col1}_tumor_5kbBin_UCSC.cnn
 
 # normalize and fix
 cnvkit.py fix inputs/${col1}_tumor_5kbBin_UCSC.cnn inputs/${col1}_tumor_5kbBin_UCSC.cnn inputs/CNV_pooled_normal_reference.cnn -o inputs/${col1}_tumor_5kbBin_UCSC.cnr
