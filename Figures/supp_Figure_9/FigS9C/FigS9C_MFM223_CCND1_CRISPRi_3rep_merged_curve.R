@@ -9,7 +9,7 @@ library(forcats)
 # -----------------------------
 # Step 1: Read your tidy samplesheet
 # -----------------------------
-df <- read_csv(file.path(IN_DIR, "20251218_samplesheet_complete_v2.csv")) %>%
+df <- read_csv(file.path(IN_DIR, "Fig.S9D_20251218_samplesheet_complete_v2.csv")) %>%
   mutate(
     Biorep = factor(Biorep),
     group  = fct_relevel(group, "gNT", "gCCND1_1", "gCCND1_2", "gCCND1_DepE1")
@@ -43,9 +43,9 @@ gg <- ggplot(df_biorep_avg, aes(x = time, y = value, color = group, shape = Bior
     subtitle = "Each point = mean across technical replicates per biological replicate",
     x = "Time (hours)",
     y = "Confluence (normalized)",
-    caption = "Source: 20251218_samplesheet_complete_v2.csv"
+    caption = "Source: Fig.S9D_20251218_samplesheet_complete_v2.csv"
   ) +
-  theme_bw()
+  theme_bw() +
   theme(
     axis.title.x = element_text(size = 16),  
     axis.title.y = element_text(size = 16),  
