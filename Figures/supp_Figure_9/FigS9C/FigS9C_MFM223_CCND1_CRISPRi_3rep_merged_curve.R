@@ -54,5 +54,4 @@ gg <- ggplot(df_biorep_avg, aes(x = time, y = value, color = group, shape = Bior
     axis.ticks.length = unit(0.25, "cm")    
 )
 
-
 print(gg)
