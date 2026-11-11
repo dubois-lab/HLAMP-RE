@@ -60,10 +60,10 @@ Patient-level and third-party input data are not part of this repository.
 | Fig. 5 | `Figures/Figure_5/Fig5B` | [`Fig5B_TFs_LUSC_CCND1.R`](Figures/Figure_5/Fig5B/Fig5B_TFs_LUSC_CCND1.R) |
 | Fig. 5 | `Figures/Figure_5/Fig5C` | [`Fig5C_CCND1_E1_MCF7_Reporter_boxplot_log2_paired_ttest_ymax0.R`](Figures/Figure_5/Fig5C/Fig5C_CCND1_E1_MCF7_Reporter_boxplot_log2_paired_ttest_ymax0.R) |
 | Fig. 5 | `Figures/Figure_5/Fig5D` | [`Fig5D_CCND1_E1_EPLC_boxplot_log2_paired_ttest_ymax0.R`](Figures/Figure_5/Fig5D/Fig5D_CCND1_E1_EPLC_boxplot_log2_paired_ttest_ymax0.R) |
-| Fig. 5 | `Figures/Figure_5/Fig5E` | [`Fig5E_ZR751_CCND1_CRISPRi_3rep_merged_curve_no_g1.R`](Figures/Figure_5/Fig5E/Fig5E_ZR751_CCND1_CRISPRi_3rep_merged_curve_no_g1.R) |
-| Fig. 5 | `Figures/Figure_5/Fig5F` | [`Fig5F_ZR751_AUC_LMM_adjP.R`](Figures/Figure_5/Fig5F/Fig5F_ZR751_AUC_LMM_adjP.R) |
+| Fig. 5 | `Figures/Figure_5/Fig5E` | [`Fig5E_ZR751_CCND1_CRISPRi_3rep_72h_curve.R`](Figures/Figure_5/Fig5E/Fig5E_ZR751_CCND1_CRISPRi_3rep_72h_curve.R) |
+| Fig. 5 | `Figures/Figure_5/Fig5F` | [`Fig5F_ZR751_per_biorep_Fisher_72h.R`](Figures/Figure_5/Fig5F/Fig5F_ZR751_per_biorep_Fisher_72h.R) |
 | Fig. 5 | `Figures/Figure_5/Fig5G` | [`Fig5G_EPLC272H_CCND1_CRISPRi_3rep_merged_curve_no_g1.R`](Figures/Figure_5/Fig5G/Fig5G_EPLC272H_CCND1_CRISPRi_3rep_merged_curve_no_g1.R) |
-| Fig. 5 | `Figures/Figure_5/Fig5H` | [`Fig5H_EPLC_AUC_LMM_adjp.R`](Figures/Figure_5/Fig5H/Fig5H_EPLC_AUC_LMM_adjp.R) |
+| Fig. 5 | `Figures/Figure_5/Fig5H` | [`Fig5H_EPLC_per_biorep_Fisher_144h.R`](Figures/Figure_5/Fig5H/Fig5H_EPLC_per_biorep_Fisher_144h.R) |
 
 ### Supplementary figures
 
@@ -86,7 +86,7 @@ Patient-level and third-party input data are not part of this repository.
 | Fig. S7 | `Figures/supp_Figure_7/FigS7D` | [`FigS7D_job-script_comb_TADratio_200sqrd_20Mb.sh`](Figures/supp_Figure_7/FigS7D/FigS7D_job-script_comb_TADratio_200sqrd_20Mb.sh)<br>[`FigS7D_job-script_tumors_TADratio_200sqrd_20Mb.sh`](Figures/supp_Figure_7/FigS7D/FigS7D_job-script_tumors_TADratio_200sqrd_20Mb.sh)<br>[`FigS7D_lungTAD_inout_ratio_normals20Mb_vs_tumors_hiccovlogisticnorm_CNgt9_randwin_chr7_8_11_200sqrd.R`](Figures/supp_Figure_7/FigS7D/FigS7D_lungTAD_inout_ratio_normals20Mb_vs_tumors_hiccovlogisticnorm_CNgt9_randwin_chr7_8_11_200sqrd.R)<br>[`FigS7D_lungTAD_inout_ratio_tumor_hiccovlogisticnorm_CNgt9_randwin_chr7_8_11_20Mb_200sqrd.R`](Figures/supp_Figure_7/FigS7D/FigS7D_lungTAD_inout_ratio_tumor_hiccovlogisticnorm_CNgt9_randwin_chr7_8_11_20Mb_200sqrd.R) |
 | Fig. S8 | `Figures/supp_Figure_8` | [`FigS8A_vis_hicdcdiff_results_covCovariate_NSD3_counts_sigbars.R`](Figures/supp_Figure_8/FigS8A_vis_hicdcdiff_results_covCovariate_NSD3_counts_sigbars.R)<br>[`FigS8B_vis_hicdcdiff_results_covCovariate_EGFR_counts_sigbars.R`](Figures/supp_Figure_8/FigS8B_vis_hicdcdiff_results_covCovariate_EGFR_counts_sigbars.R) |
 | Fig. S9 | `Figures/supp_Figure_9/FigS9C` | [`FigS9C_MFM223_CCND1_CRISPRi_3rep_merged_curve.R`](Figures/supp_Figure_9/FigS9C/FigS9C_MFM223_CCND1_CRISPRi_3rep_merged_curve.R) |
-| Fig. S9 | `Figures/supp_Figure_9/FigS9D` | [`FigS9D_MFM223AUC_LMM_adjp.R`](Figures/supp_Figure_9/FigS9D/FigS9D_MFM223AUC_LMM_adjp.R) |
+| Fig. S9 | `Figures/supp_Figure_9/FigS9D` | [`FigS9D_MFM223_per_biorep_Fisher_156h.R`](Figures/supp_Figure_9/FigS9D/FigS9D_MFM223_per_biorep_Fisher_156h.R) |
 
 ## Workflows
 
